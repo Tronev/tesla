@@ -1,11 +1,11 @@
-const gulp        = require('gulp');
-const browserSync = require('browser-sync');
-const sass        = require('gulp-sass');
-const cleanCSS = require('gulp-clean-css');
-const autoprefixer = require('gulp-autoprefixer');
-const rename = require("gulp-rename");
-const imagemin = require('gulp-imagemin');
-const htmlmin = require('gulp-htmlmin');
+var gulp        = require('gulp');
+var browserSync = require('browser-sync');
+var sass        = require('gulp-sass');
+var cleanCSS = require('gulp-clean-css');
+var autoprefixer = require('gulp-autoprefixer');
+var rename = require("gulp-rename");
+var imagemin = require('gulp-imagemin');
+var htmlmin = require('gulp-htmlmin');
 
 gulp.task('server', function() {
 
@@ -25,6 +25,7 @@ gulp.task('styles', function() {
         .pipe(autoprefixer())
         .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(gulp.dest("dist/css"))
+        .pipe(gulp.dest("src/css"))
         .pipe(browserSync.stream());
 });
 
