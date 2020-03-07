@@ -1,6 +1,28 @@
-@import'libs/reset';
-
+@import'libs/reset'; // сброс стилей
+@import'base/variables'; // данные
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: $main-color;
+    color: $text-color;
+    font-size: 24px;
+    line-height: 28px;
+    // font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+}
+a{
+    color: $text-color;
+    text-decoration: none;
+    
+}
 .container{
-    width: 1200px;
+    padding: 0 15px;
+    max-width: 1230px;
     margin: 0 auto;
 }
+
+@import'blocks/header'; 
+@import'blocks/btn'; // кнопка
+@import'blocks/slick'; // стили слайдела
