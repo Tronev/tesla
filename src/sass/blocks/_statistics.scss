@@ -1,0 +1,39 @@
+.statistics {
+    margin: 160px 0 100px;
+    // min-height: 400px;
+    &-items{
+        display: flex;
+        justify-content: space-around;
+    }
+    &-item{
+        text-align: center;
+        &__title{
+           margin-bottom: 19px;
+        }
+        &__num{
+            font-size: 96px;
+            line-height: 112px;
+            margin-bottom: 7px;
+            span{
+                font-size: 24px;
+                line-height: 28px;
+                font-family: 'Roboto', sans-serif;
+                // margin-left: -20px;
+            }
+            &-plus{
+                span{
+                    position: relative;
+                    &::before{
+                        content: "+";
+                        position: absolute;
+                        left: 5px;
+                    }
+                }
+            }
+        }
+        &__descr{
+            color: $third-text-color;
+        }
+    }
+   
+}
