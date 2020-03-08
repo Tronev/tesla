@@ -1,5 +1,8 @@
 .header{
     height: 100vh;
+    position: absolute;
+    z-index: 5;
+    width: 100%;
     &-top{
         display: flex;
         justify-content: space-between;

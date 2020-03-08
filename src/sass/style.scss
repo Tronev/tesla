@@ -23,6 +23,7 @@ a{
     margin: 0 auto;
 }
 
-@import'blocks/header'; 
+@import'blocks/header';  // header style
 @import'blocks/btn'; // кнопка
-@import'blocks/slick'; // стили слайдела
+@import'libs/slick'; // стили слик-слайдера
+@import'blocks/slider'; // стили моего слайдера
