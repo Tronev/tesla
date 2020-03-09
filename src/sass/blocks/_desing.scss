@@ -1,0 +1,23 @@
+.desing{
+    &__images{
+        margin-bottom: 100px;
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        max-width: 570px;
+        width: 100%;
+        padding-right: 15px;
+        display: flex;
+        justify-content: space-between;
+        &-num{
+            color:$third-text-color;
+        }
+        &-text{
+            max-width: 450px;
+            padding-top: 25px;
+        }
+    }
+}
