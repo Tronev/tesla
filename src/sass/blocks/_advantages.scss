@@ -1,0 +1,36 @@
+.advantages{
+    &-inner{
+        &__row{
+            margin-bottom: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+    }
+    &__title{
+        font-size: 36px;
+        line-height: 42px;
+        color: $third-text-color;
+        position: absolute;
+        top: 0;
+        // left: 0;
+        &-bottom{
+            right: 0;
+            bottom: 0;
+            top: auto;
+        }
+    }
+    &__text{
+        width: 303px;
+        
+        ul{
+            list-style: none;
+        }
+    }
+    &-descr{
+        max-width: 570px;
+        width: 100%;
+    }
+
+}
