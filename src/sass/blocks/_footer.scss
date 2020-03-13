@@ -13,6 +13,7 @@
             list-style-type: none; 
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
             li{
                 padding: 0 15px 0 0;
                 &+ li::before{

@@ -4,6 +4,7 @@
     &-items{
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
     }
     &-item{
         text-align: center;

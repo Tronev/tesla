@@ -1,10 +1,14 @@
 .desing{
     &__images{
         margin-bottom: 100px;
+        img{
+            width: 100%;
+        }
     }
     &__wrapper{
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
     &__item{
         max-width: 570px;
