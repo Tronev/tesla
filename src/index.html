@@ -32,7 +32,8 @@
                 <div class="header-content__text">
                     Самый быстрый автомобиль в мире, с рекордным ускорением, дальностью и производительностью.
                 </div>
-                <a href="#" class="btn">Хочу тест драйв</a>
+                <div data-modal="consultation" class="btn">Хочу тест драйв</div>
+                
             </div>
         </div>
     </header>
@@ -176,10 +177,10 @@
 
  <footer class="footer">
      <div class="container">
-       <div class="footer__btn">
-        <a href="#" class="btn">Хочу тест драйв</a>
-       </div>
-       <div class="footer-copy">
+        <div class="footer__btn">
+        <div data-modal="consultation" class="btn">Хочу тест драйв</div>
+        </div>
+        <div class="footer-copy">
         <ul>
             <li>Tesla © 2020</li>
             <li><a href="#">Privacy & Legal</a></li>
@@ -189,9 +190,32 @@
             <li><a href="#">Forums</a></li>
             <li><a href="#"> Locations</a></li>
         </ul>        
-       </div>
+        </div>
      </div>
  </footer>
+
+<!-- модальное окно -->
+
+<section class="overlay">
+    <div class="modal" id="consultation">
+        <div class="modal__close">&times;</div>
+        <div class="modal__subtitle">Заполните форму заявки</div>
+        
+        <form class="feed-form feed-form_mt25" action="#">
+            <input name="name" placeholder="Ваше имя" type="text"> 
+            <input name="phone" placeholder="Ваш телефон"> 
+            <input name="email" placeholder="Ваш E-mail" type="email"> 
+            <button class="button button_submit">заказать тестдрайв</button>
+        </form>
+    </div>
+
+    <div class="modal modal_mini" id="thanks">
+        <div class="modal__close">&times;</div>
+        <div class="modal__subtitle">Спасибо за вашу заявку!</div>
+        <div class="modal__descr">Наш менеджер свяжется с вами 
+            в ближайшее время!</div>
+    </div>
+</section>
 
     <!-- скрипты  -->
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
