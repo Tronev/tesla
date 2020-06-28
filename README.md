@@ -1,1 +1,1 @@
-https://tronev.github.io/tesla/ ссылка на результат
+https://tronev.github.io/tesla/dist/ ссылка на результат
