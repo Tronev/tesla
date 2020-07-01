@@ -23,4 +23,4 @@ $(function () {
     $('.modal__close').on('click',function(){
         $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
     });
-});  
+});
